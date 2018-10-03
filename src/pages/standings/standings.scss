@@ -1,10 +1,33 @@
 page-standings {
-    .centerTable { 
+    .centerTableWest { 
         margin: 0px auto;
         border-collapse: collapse;
         width: calc(50% - 10px);
         float: left;
         margin: 9px;
+    }
+    .centerTableEast { 
+        margin: 0px auto;
+        border-collapse: collapse;
+        width: calc(50% - 10px);
+        float: left;
+        margin: 9px;
+    }
+
+    .centerTableEast th{
+        background-color:powderblue;
+    }
+
+    .centerTableEast td{
+        background-color:cornsilk;
+    }
+
+    .centerTableWest th{
+        background-color:powderblue;
+    }
+
+    .centerTableWest td{
+        background-color:cornsilk;
     }
 
     td{
