@@ -1,6 +1,13 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { TabsPage } from '../../pages/tabs/tabs';
+
+import { AboutPage } from '../../pages/about/about';
+import { ContactPage } from '../../pages/contact/contact';
 import { HomePage } from '../../pages/home/home';
+
+import { StandingsPage } from '../../pages/standings/standings';
+import { TeamsPage } from '../../pages/teams/teams';
 
 /**
  * Generated class for the LoginPage page.
@@ -24,6 +31,6 @@ export class LoginPage {
   }
 
   login(){
-    this.navCtrl.push(HomePage);
+    this.navCtrl.push(TabsPage);
   }
 }
