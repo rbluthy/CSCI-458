@@ -8,6 +8,7 @@ import { HomePage } from '../../pages/home/home';
 
 import { StandingsPage } from '../../pages/standings/standings';
 import { TeamsPage } from '../../pages/teams/teams';
+import { User } from 'firebase';
 
 /**
  * Generated class for the LoginPage page.
@@ -23,6 +24,8 @@ import { TeamsPage } from '../../pages/teams/teams';
 })
 export class LoginPage {
 
+  user = {} as User;
+  
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
@@ -32,5 +35,10 @@ export class LoginPage {
 
   login(){
     this.navCtrl.push(TabsPage);
+  }
+
+  register()
+  {
+    this.navCtrl.push("RegisterPage");
   }
 }
