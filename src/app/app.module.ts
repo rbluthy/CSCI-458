@@ -11,8 +11,6 @@ import { StandingsPage } from '../pages/standings/standings';
 import { TeamsPage } from '../pages/teams/teams';
 import { LoginPage} from '../pages/login/login';
 
-import {W1Page} from '../pages/w1/w1';
-
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -25,8 +23,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     StandingsPage,
     TeamsPage,
     TabsPage,
-    LoginPage,
-    W1Page
+    LoginPage
   ],
   imports: [
     BrowserModule,
@@ -41,8 +38,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     StandingsPage,
     TeamsPage,
     TabsPage,
-    LoginPage,
-    W1Page
+    LoginPage
   ],
   providers: [
     StatusBar,
