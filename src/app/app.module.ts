@@ -13,6 +13,8 @@ import { LoginPage} from '../pages/login/login';
 import { RegisterPage} from '../pages/register/register';
 
 
+import {W1Page} from '../pages/w1/w1';
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { AngularFireModule } from "angularfire2";
@@ -30,8 +32,13 @@ import { RegisterPageModule } from '../pages/register/register.module';
     StandingsPage,
     TeamsPage,
     TabsPage,
+<<<<<<< HEAD
     LoginPage
     // RegisterPage
+=======
+    LoginPage,
+    W1Page
+>>>>>>> 59eeb895bf4494a66d14c72a83dbc30f8d960fbc
   ],
   imports: [
     FormsModule, 
