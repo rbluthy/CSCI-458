@@ -31,10 +31,7 @@ import { RegisterPageModule } from '../pages/register/register.module';
     TeamsPage,
     TabsPage,
     LoginPage
-<<<<<<< HEAD
-    
-=======
->>>>>>> a03a9b32f516ffcae77930c25982b0811c2c7e38
+
   ],
   imports: [
     FormsModule, 
@@ -58,12 +55,8 @@ import { RegisterPageModule } from '../pages/register/register.module';
     StandingsPage,
     TeamsPage,
     TabsPage,
-<<<<<<< HEAD
-    LoginPage,
-    RegisterPage
-=======
     LoginPage
->>>>>>> a03a9b32f516ffcae77930c25982b0811c2c7e38
+
   ],
   providers: [
     StatusBar,
