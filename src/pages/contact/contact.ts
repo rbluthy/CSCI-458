@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { W1Page } from '../w1/w1';
 
 @Component({
   selector: 'page-contact',
@@ -12,9 +11,25 @@ export class ContactPage {
 
   }
 
-  openW1Page(){
-    this.navCtrl.push(W1Page);
-  }
+  items = [
+    'Week 1',
+    'Super Metroid',
+    'Mega Man X',
+    'The Legend of Zelda',
+    'Pac-Man',
+    'Super Mario World',
+    'Street Fighter II',
+    'Half Life',
+    'Final Fantasy VII',
+    'Star Fox',
+    'Tetris',
+    'Donkey Kong III',
+    'GoldenEye 007',
+    'Doom',
+    'Fallout',
+    'GTA',
+    'Halo'
+  ];
 
   itemSelected(item: string) {
     console.log("Selected Item", item);
