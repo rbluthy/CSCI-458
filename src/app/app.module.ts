@@ -32,13 +32,8 @@ import { RegisterPageModule } from '../pages/register/register.module';
     StandingsPage,
     TeamsPage,
     TabsPage,
-<<<<<<< HEAD
     LoginPage
-    // RegisterPage
-=======
-    LoginPage,
-    W1Page
->>>>>>> 59eeb895bf4494a66d14c72a83dbc30f8d960fbc
+    
   ],
   imports: [
     FormsModule, 
