@@ -12,6 +12,7 @@ import { TeamsPage } from '../pages/teams/teams';
 import { LoginPage} from '../pages/login/login';
 import { RegisterPage} from '../pages/register/register';
 
+import {W1Page} from '../pages/w1/w1';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -30,7 +31,8 @@ import { RegisterPageModule } from '../pages/register/register.module';
     StandingsPage,
     TeamsPage,
     TabsPage,
-    LoginPage
+    LoginPage,
+    W1Page
 
   ],
   imports: [
@@ -55,7 +57,8 @@ import { RegisterPageModule } from '../pages/register/register.module';
     StandingsPage,
     TeamsPage,
     TabsPage,
-    LoginPage
+    LoginPage,
+    W1Page
 
   ],
   providers: [
