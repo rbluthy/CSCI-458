@@ -20,9 +20,10 @@ export class HomePage {
    }
 
   logout(){
-    
+    this.fire.auth.signOut();
+    //var nav = this.app.getRootNav();
     //this.fire.auth.signOut();
-    //this.navCtrl.setRoot(LoginPage);
+    this.navCtrl.setRoot(LoginPage);
     //this.fire.auth.signOut();
    // this.navCtrl.push(LoginPage);
     //const root = this.app.navPop();
