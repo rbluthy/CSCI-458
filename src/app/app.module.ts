@@ -41,9 +41,6 @@ import {HttpModule} from '@angular/http';
 import { AngularFireAuthModule} from 'angularfire2/auth';
 import { RegisterPageModule } from '../pages/register/register.module';
 
-import { LoginPageModule } from '../pages/login/login.module';
-
-
 const firebaseAuth = {
   apiKey: "AIzaSyBqACTMvP1pJ2iSS_mj4Zmz_omq2jLNRA0",
     authDomain: "innings-8dee9.firebaseapp.com",
@@ -62,7 +59,7 @@ const firebaseAuth = {
     StandingsPage,
     TeamsPage,
     TabsPage,
-    //LoginPage,
+    LoginPage,
     W1Page,
     W2Page,
     W3Page,
@@ -78,9 +75,9 @@ const firebaseAuth = {
     W13Page,
     W14Page,
     W15Page,
-
-    BowlsPage,
     BowlsPage
+  
+
   ],
   imports: [
     HttpModule,
@@ -100,10 +97,10 @@ const firebaseAuth = {
     AboutPage,
     ContactPage,
     HomePage,
-    LoginPage,
     StandingsPage,
     TeamsPage,
     TabsPage,
+    LoginPage,
     W1Page,
     W2Page,
     W3Page,

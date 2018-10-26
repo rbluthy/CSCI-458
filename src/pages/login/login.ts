@@ -13,18 +13,6 @@ import { StandingsPage } from '../../pages/standings/standings';
 import { TeamsPage } from '../../pages/teams/teams';
 import { User } from 'firebase';
 
-
-import {
-  Alert,
-  AlertController,
-  Loading,
-  LoadingController,
-} from 'ionic-angular';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { EmailValidator } from '../../validators/email';
-import { AuthProvider } from '../register/provides/auth/auth';
-
-
 /**
  * Generated class for the LoginPage page.
  *

@@ -20,7 +20,6 @@ import { LoginPage } from '../../pages/login/login';
 })
 export class RegisterPage {
 
-<<<<<<< HEAD
 
 	@ViewChild('username') user;
 	@ViewChild('password') password;
@@ -58,26 +57,3 @@ export class RegisterPage {
   }
 
 }
-=======
-  
-
-  constructor( public afauth: AngularFireAuth, public navCtrl: NavController, public navParams: NavParams) {
-  }
-
-   user = {} as User;
-   register(user: User){
-   try{
-   const result = this.afauth.auth.createUserWithEmailAndPassword(user.email, user.password);
-   console.log(result);
-   }
-  
-  catch(e){
-    console.error(e);
-    console.log('ionViewDidLoad RegisterPage');
-  }
-  // ionViewDidLoad() {
-  //   
-  // }
-}
-}
->>>>>>> Ignore This
