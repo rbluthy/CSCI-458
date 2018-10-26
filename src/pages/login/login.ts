@@ -1,5 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { AngularFireAuth } from 'angularfire2/auth';
+
+
 import { TabsPage } from '../../pages/tabs/tabs';
 
 import { AboutPage } from '../../pages/about/about';
@@ -24,21 +27,35 @@ import { User } from 'firebase';
 })
 export class LoginPage {
 
-  user = {} as User;
-  
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+	@ViewChild('username') user;
+	@ViewChild('password') password;
+
+  constructor(private fire:AngularFireAuth,public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginPage');
   }
 
-  login(){
-    this.navCtrl.push(TabsPage);
-  }
+  
 
+  signInUser() {
+    this.fire.auth.signInWithEmailAndPassword(this.user.value, this.password.value)
+    .then( data => {
+      console.log('got some data', this.fire.auth.currentUser);
+      
+      this.navCtrl.setRoot( HomePage );
+      // user is logged in
+    })
+    .catch( error => {
+      console.log('got an error', error);
+      
+    })
+  	console.log('Would sign in with ', this.user.value, this.password.value);
+  }
   register()
   {
-    this.navCtrl.push("RegisterPage");
+    this.navCtrl.push('RegisterPage');
   }
+  
 }

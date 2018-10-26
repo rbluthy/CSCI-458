@@ -32,12 +32,24 @@ import {BowlsPage} from '../pages/bowls/bowls';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { AngularFireModule } from "angularfire2";
-import { FIREBASE_CONFIG } from './app.firebase.config';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+import { AngularFireModule } from 'angularfire2';
+
+
 import {HttpModule} from '@angular/http';
-import { AngularFireAuth} from "angularfire2/auth";
+
+import { AngularFireAuthModule} from 'angularfire2/auth';
 import { RegisterPageModule } from '../pages/register/register.module';
+
+const firebaseAuth = {
+  apiKey: "AIzaSyBqACTMvP1pJ2iSS_mj4Zmz_omq2jLNRA0",
+    authDomain: "innings-8dee9.firebaseapp.com",
+    databaseURL: "https://innings-8dee9.firebaseio.com",
+    projectId: "innings-8dee9",
+    storageBucket: "innings-8dee9.appspot.com",
+    messagingSenderId: "165581507121"
+};
+
 @NgModule({
   declarations: [
     MyApp,
@@ -64,16 +76,16 @@ import { RegisterPageModule } from '../pages/register/register.module';
     W14Page,
     W15Page,
     BowlsPage
+  
 
   ],
   imports: [
-    FormsModule, 
-    ReactiveFormsModule,
     HttpModule,
     BrowserModule,  
     IonicModule.forRoot(MyApp),
-    AngularFireModule.initializeApp(FIREBASE_CONFIG),
-    RegisterPageModule
+    AngularFireModule.initializeApp(firebaseAuth),
+    RegisterPageModule,
+    AngularFireAuthModule
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,
@@ -110,8 +122,7 @@ import { RegisterPageModule } from '../pages/register/register.module';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
-    AngularFireAuth
+    {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
 export class AppModule {}

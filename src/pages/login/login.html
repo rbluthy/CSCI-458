@@ -8,26 +8,26 @@
 <ion-content padding>
   <img src="https://cdn.styleblueprint.com/wp-content/uploads/2015/08/SEC-map.jpg">
     
-  <div>  </div>
-  <div></div>
-
-  <ion-item>
-  <ion-label floating> Email Address</ion-label>
-  <ion-input type="text" [(ngmodel)] = "user.email" ></ion-input>
-  <!-- <input type="password" placeholder="Password"> -->
-  </ion-item>
+  <ion-list>
 
     <ion-item>
-    <ion-label floating> Password</ion-label>
-    <ion-input type="password" [(ngmodel)] = "user.password" aria-placeholder="bckhb" ></ion-input>
+      <ion-label floating>Username</ion-label>
+      <ion-input type="text" #username></ion-input>
     </ion-item>
+  
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password" #password></ion-input>
+    </ion-item>
+    
+  </ion-list>
+  
+  <div padding>
+    <button block ion-button (click)="signInUser()" item-left>Sign In</button>
+  </div>
 
-  <button color="red" ion-button class="login" (click)="login()" aria-placeholder="bascjhvs">LOGIN</button>
-  <br>
   <p>Don't Have an Account?</p>
   <button color="red" ion-button class="register" (click)="register()">Register Here</button>
-
-
 
 
 
