@@ -44,7 +44,7 @@ export class LoginPage {
     .then( data => {
       console.log('got some data', this.fire.auth.currentUser);
       
-      this.navCtrl.setRoot( HomePage );
+      this.navCtrl.setRoot( TabsPage );
       // user is logged in
     })
     .catch( error => {

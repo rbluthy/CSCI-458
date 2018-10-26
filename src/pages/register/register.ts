@@ -4,6 +4,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 
 import { AngularFireAuth } from 'angularfire2/auth';
+import { LoginPage } from '../../pages/login/login';
 
 /**
  * Generated class for the RegisterPage page.
@@ -37,7 +38,7 @@ export class RegisterPage {
     this.fire.auth.createUserWithEmailAndPassword(this.user.value, this.password.value)
     .then(data => {
       console.log('got data ', data);
-      
+      this.navCtrl.setRoot( LoginPage );
     })
     .catch(error => {
       console.log('got an error ', error);
