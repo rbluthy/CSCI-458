@@ -1,24 +1,21 @@
-
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
-
-
 import { AngularFireAuth } from 'angularfire2/auth';
-import { LoginPage } from '../../pages/login/login';
+import { HomePage } from '../home/home';
 
 /**
- * Generated class for the RegisterPage page.
+ * Generated class for the ChnagepasswordPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-
 @IonicPage()
 @Component({
-  selector: 'page-reset',
-  templateUrl: 'reset.html',
+  selector: 'page-chnagepassword',
+  templateUrl: 'chnagepassword.html',
 })
-export class ResetPage {
+
+export class ChnagepasswordPage {
 
 
 	@ViewChild('email') user;
@@ -29,14 +26,14 @@ export class ResetPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ResetrPage');
+    console.log('ionViewDidLoad ChnagepasswordPage');
   }
 
   
 
-  resetUser() {
+  chnageUser() {
     this.fire.auth.sendPasswordResetEmail(this.user.value);
-    this.navCtrl.push(LoginPage);
+    this.navCtrl.push(HomePage);
   
   	
   }

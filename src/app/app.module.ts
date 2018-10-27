@@ -42,6 +42,7 @@ import {HttpModule} from '@angular/http';
 import { AngularFireAuthModule} from 'angularfire2/auth';
 import { RegisterPageModule } from '../pages/register/register.module';
 import { ResetPageModule } from '../pages/reset/reset.module';
+import { ChnagepasswordPage } from '../pages/chnagepassword/chnagepassword';
 
 const firebaseAuth = {
   apiKey: "AIzaSyBqACTMvP1pJ2iSS_mj4Zmz_omq2jLNRA0",
@@ -77,7 +78,8 @@ const firebaseAuth = {
     W13Page,
     W14Page,
     W15Page,
-    BowlsPage
+    BowlsPage,
+    ChnagepasswordPage
   
 
   ],
@@ -119,7 +121,8 @@ const firebaseAuth = {
     W13Page,
     W14Page,
     W15Page,
-    BowlsPage
+    BowlsPage,
+    ChnagepasswordPage
 
   ],
   providers: [

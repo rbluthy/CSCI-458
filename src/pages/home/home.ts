@@ -3,6 +3,7 @@ import { NavController, App } from 'ionic-angular';
 import { AngularFireAuth} from 'angularfire2/auth';
 import {AlertController} from 'ionic-angular';
 import { LoginPage } from '../login/login';
+import { ChnagepasswordPage } from '../chnagepassword/chnagepassword';
 
 
 
@@ -20,13 +21,20 @@ export class HomePage {
    }
 
   logout(){
-    this.fire.auth.signOut();
+    
+    //this.fire.auth.signOut();
+  
     //var nav = this.app.getRootNav();
     //this.fire.auth.signOut();
-    this.navCtrl.setRoot(LoginPage);
+    //this.navCtrl.popAll(LoginPage);
+    //this.navCtrl.setRoot(LoginPage);
     //this.fire.auth.signOut();
    // this.navCtrl.push(LoginPage);
     //const root = this.app.navPop();
+  }
+
+  changepass(){
+    this.navCtrl.push(ChnagepasswordPage);
   }
 
 }
