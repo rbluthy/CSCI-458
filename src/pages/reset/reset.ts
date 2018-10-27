@@ -36,7 +36,7 @@ export class ResetPage {
 
   resetUser() {
     this.fire.auth.sendPasswordResetEmail(this.user.value);
-    this.navCtrl.push(LoginPage);
+    //this.navCtrl.push(LoginPage);
   
   	
   }

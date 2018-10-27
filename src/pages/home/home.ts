@@ -34,7 +34,7 @@ export class HomePage {
   }
 
   changepass(){
-    this.navCtrl.push(ChnagepasswordPage);
+    this.navCtrl.push('ResetPage');
   }
 
 }

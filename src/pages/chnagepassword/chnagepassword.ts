@@ -2,6 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { HomePage } from '../home/home';
+import { LoginPage } from '../login/login';
 
 /**
  * Generated class for the ChnagepasswordPage page.
@@ -19,7 +20,7 @@ export class ChnagepasswordPage {
 
 
 	@ViewChild('email') user;
-	//@ViewChild('password') password;
+	@ViewChild('password') password;
 
   constructor(private alertCtrl: AlertController, private fire: AngularFireAuth, public navCtrl: NavController, public navParams: NavParams) {
   
@@ -32,8 +33,8 @@ export class ChnagepasswordPage {
   
 
   chnageUser() {
-    this.fire.auth.sendPasswordResetEmail(this.user.value);
-    this.navCtrl.push(HomePage);
+    //this.fire.auth.sendPasswordResetEmail(this.user.value);
+    this.navCtrl.push('ResetPage');
   
   	
   }
