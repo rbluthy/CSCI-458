@@ -1,6 +1,6 @@
 
 import { Component, ViewChild } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 
 
 import { AngularFireAuth } from 'angularfire2/auth';
@@ -20,12 +20,11 @@ import { LoginPage } from '../../pages/login/login';
 })
 export class RegisterPage {
 
-<<<<<<< HEAD
 
 	@ViewChild('username') user;
 	@ViewChild('password') password;
 
-  constructor(private fire: AngularFireAuth, public navCtrl: NavController, public navParams: NavParams) {
+  constructor(private alertCtrl: AlertController, private fire: AngularFireAuth, public navCtrl: NavController, public navParams: NavParams) {
   
   }
 
@@ -33,16 +32,24 @@ export class RegisterPage {
     console.log('ionViewDidLoad RegisterPage');
   }
 
-
+  alert(message: string) {
+    this.alertCtrl.create({
+      title: 'Info!',
+      subTitle: message,
+      buttons: ['OK']
+    }).present();
+  }
 
   registerUser() {
     this.fire.auth.createUserWithEmailAndPassword(this.user.value, this.password.value)
     .then(data => {
       console.log('got data ', data);
       this.navCtrl.setRoot( LoginPage );
+      this.alert('Registered!');
     })
     .catch(error => {
       console.log('got an error ', error);
+      this.alert(error.message);
       
   
     });
@@ -50,29 +57,3 @@ export class RegisterPage {
   }
 
 }
-<<<<<<< HEAD
-=======
-=======
-  
-
-  constructor( public afauth: AngularFireAuth, public navCtrl: NavController, public navParams: NavParams) {
-  }
-
-   user = {} as User;
-   register(user: User){
-   try{
-   const result = this.afauth.auth.createUserWithEmailAndPassword(user.email, user.password);
-   console.log(result);
-   }
-  
-  catch(e){
-    console.error(e);
-    console.log('ionViewDidLoad RegisterPage');
-  }
-  // ionViewDidLoad() {
-  //   
-  // }
-}
-}
->>>>>>> Ignore This
->>>>>>> abad3946192318b403e60bbca5350cebcc67e1f5
