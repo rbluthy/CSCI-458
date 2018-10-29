@@ -1,9 +1,7 @@
 import { Component } from '@angular/core';
-import { NavController, App } from 'ionic-angular';
-import { AngularFireAuth} from 'angularfire2/auth';
+import { NavController } from 'ionic-angular';
+
 import {AlertController} from 'ionic-angular';
-import { LoginPage } from '../login/login';
-import { ChnagepasswordPage } from '../chnagepassword/chnagepassword';
 
 
 
@@ -14,27 +12,15 @@ import { ChnagepasswordPage } from '../chnagepassword/chnagepassword';
 })
 export class HomePage {
 
-  email: string;
+  constructor(public alerCtrl: AlertController) { }
 
-  constructor(private fire: AngularFireAuth, public alerCtrl: AlertController, public navCtrl: NavController, public app: App) {
-    this.email = fire.auth.currentUser.email;
-   }
-
-  logout(){
-    
-    //this.fire.auth.signOut();
-  
-    //var nav = this.app.getRootNav();
-    //this.fire.auth.signOut();
-    //this.navCtrl.popAll(LoginPage);
-    //this.navCtrl.setRoot(LoginPage);
-    //this.fire.auth.signOut();
-   // this.navCtrl.push(LoginPage);
-    //const root = this.app.navPop();
-  }
-
-  changepass(){
-    this.navCtrl.push('ResetPage');
+  doAlert() {
+    let alert = this.alerCtrl.create({
+      title: 'Login Alert!',
+      message: 'Not implemented yet!',
+      buttons: ['Ok']
+    });
+    alert.present()
   }
 
 }

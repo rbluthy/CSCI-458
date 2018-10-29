@@ -6,8 +6,6 @@ import { HomePage } from '../home/home';
 import { StandingsPage } from '../standings/standings';
 import { TeamsPage } from '../teams/teams';
 
-import {Events, NavController } from 'ionic-angular';
-
 
 @Component({
   templateUrl: 'tabs.html'
@@ -21,7 +19,7 @@ export class TabsPage {
   tab5Root = TeamsPage;
 
 
-  constructor(public events: Events, public navCtrl: NavController) {
+  constructor() {
 
   }
 }
