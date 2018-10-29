@@ -21,6 +21,8 @@ export class HomePage {
    }
 
   logout(){
+    let nav = this.app.getRootNav();
+    nav.setRoot(LoginPage);
     
     //this.fire.auth.signOut();
   
