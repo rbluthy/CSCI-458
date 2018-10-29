@@ -55,4 +55,9 @@ export class RegisterPage {
     });
   	console.log('Would register user with ', this.user.value, this.password.value);
   }
+
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 194d4327b7275fcf9b690ea2d55cb3e4f9badf99
