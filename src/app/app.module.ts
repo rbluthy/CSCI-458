@@ -62,7 +62,7 @@ const firebaseAuth = {
     StandingsPage,
     TeamsPage,
     TabsPage,
-   // LoginPage,
+    //LoginPage,
     W1Page,
     W2Page,
     W3Page,
@@ -88,7 +88,6 @@ const firebaseAuth = {
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(firebaseAuth),
     RegisterPageModule,
-    LoginPageModule,
     AngularFireAuthModule
   ],
   schemas: [
