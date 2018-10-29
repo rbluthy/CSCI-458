@@ -63,10 +63,14 @@ const firebaseAuth = {
     TeamsPage,
     TabsPage,
 <<<<<<< HEAD
+<<<<<<< HEAD
    // LoginPage,
 =======
     LoginPage,
 >>>>>>> 194d4327b7275fcf9b690ea2d55cb3e4f9badf99
+=======
+    //LoginPage,
+>>>>>>> parent of 7396be3... Ignore this
     W1Page,
     W2Page,
     W3Page,
@@ -94,10 +98,13 @@ const firebaseAuth = {
     AngularFireModule.initializeApp(firebaseAuth),
     RegisterPageModule,
 <<<<<<< HEAD
+<<<<<<< HEAD
     LoginPageModule,
 =======
     ResetPageModule,
 >>>>>>> 194d4327b7275fcf9b690ea2d55cb3e4f9badf99
+=======
+>>>>>>> parent of 7396be3... Ignore this
     AngularFireAuthModule
   ],
   schemas: [
