@@ -11,7 +11,6 @@ import { StandingsPage } from '../pages/standings/standings';
 import { TeamsPage } from '../pages/teams/teams';
 import { LoginPage} from '../pages/login/login';
 import { RegisterPage} from '../pages/register/register';
-import { ResetPage} from '../pages/reset/reset';
 
 import {W1Page} from '../pages/w1/w1';
 import {W2Page} from '../pages/w2/w2';
@@ -41,8 +40,9 @@ import {HttpModule} from '@angular/http';
 
 import { AngularFireAuthModule} from 'angularfire2/auth';
 import { RegisterPageModule } from '../pages/register/register.module';
-import { ResetPageModule } from '../pages/reset/reset.module';
-import { ChnagepasswordPage } from '../pages/chnagepassword/chnagepassword';
+
+import { LoginPageModule } from '../pages/login/login.module';
+
 
 const firebaseAuth = {
   apiKey: "AIzaSyBqACTMvP1pJ2iSS_mj4Zmz_omq2jLNRA0",
@@ -62,11 +62,7 @@ const firebaseAuth = {
     StandingsPage,
     TeamsPage,
     TabsPage,
-<<<<<<< HEAD
    // LoginPage,
-=======
-    LoginPage,
->>>>>>> 194d4327b7275fcf9b690ea2d55cb3e4f9badf99
     W1Page,
     W2Page,
     W3Page,
@@ -82,10 +78,9 @@ const firebaseAuth = {
     W13Page,
     W14Page,
     W15Page,
-    BowlsPage,
-    ChnagepasswordPage
-  
 
+    BowlsPage,
+    BowlsPage
   ],
   imports: [
     HttpModule,
@@ -93,11 +88,7 @@ const firebaseAuth = {
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(firebaseAuth),
     RegisterPageModule,
-<<<<<<< HEAD
     LoginPageModule,
-=======
-    ResetPageModule,
->>>>>>> 194d4327b7275fcf9b690ea2d55cb3e4f9badf99
     AngularFireAuthModule
   ],
   schemas: [
@@ -110,10 +101,10 @@ const firebaseAuth = {
     AboutPage,
     ContactPage,
     HomePage,
+    LoginPage,
     StandingsPage,
     TeamsPage,
     TabsPage,
-    LoginPage,
     W1Page,
     W2Page,
     W3Page,
@@ -129,8 +120,7 @@ const firebaseAuth = {
     W13Page,
     W14Page,
     W15Page,
-    BowlsPage,
-    ChnagepasswordPage
+    BowlsPage
 
   ],
   providers: [
