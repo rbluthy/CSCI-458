@@ -12,7 +12,7 @@ import { TeamsPage } from '../pages/teams/teams';
 import { LoginPage} from '../pages/login/login';
 import { RegisterPage} from '../pages/register/register';
 import { ResetPage} from '../pages/reset/reset';
-
+import {MapsPage} from '../pages/maps/maps';
 import {W1Page} from '../pages/w1/w1';
 import {W2Page} from '../pages/w2/w2';
 import {W3Page} from '../pages/w3/w3';
@@ -79,7 +79,8 @@ const firebaseAuth = {
     W14Page,
     W15Page,
     BowlsPage,
-    ChnagepasswordPage
+    ChnagepasswordPage,
+    MapsPage
   
 
   ],
@@ -122,7 +123,8 @@ const firebaseAuth = {
     W14Page,
     W15Page,
     BowlsPage,
-    ChnagepasswordPage
+    ChnagepasswordPage,
+    MapsPage
 
   ],
   providers: [
