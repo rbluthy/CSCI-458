@@ -44,6 +44,7 @@ import { RegisterPageModule } from '../pages/register/register.module';
 import { ResetPageModule } from '../pages/reset/reset.module';
 import { ChnagepasswordPage } from '../pages/chnagepassword/chnagepassword';
 
+
 const firebaseAuth = {
   apiKey: "AIzaSyBqACTMvP1pJ2iSS_mj4Zmz_omq2jLNRA0",
     authDomain: "innings-8dee9.firebaseapp.com",
