@@ -3,6 +3,8 @@ import { NavController, App } from 'ionic-angular';
 import { AngularFireAuth} from 'angularfire2/auth';
 import {AlertController} from 'ionic-angular';
 import { LoginPage } from '../login/login';
+import { BowlsPage } from '../bowls/bowls';
+import { StandingsPage } from '../standings/standings';
 import { ChnagepasswordPage } from '../chnagepassword/chnagepassword';
 
 
@@ -19,6 +21,16 @@ export class HomePage {
   constructor(private fire: AngularFireAuth, public alerCtrl: AlertController, public navCtrl: NavController, public app: App) {
     this.email = fire.auth.currentUser.email;
    }
+
+   bowls()
+  {
+    // let nav = this.app.getRootNav();
+    // nav.setRoot(BowlsPage);
+    // 
+    // this.navCtrl.push('BowlsPage');
+    let nav = this.app.getRootNav();
+    nav.setRoot(StandingsPage);
+  }
 
   logout(){
     let nav = this.app.getRootNav();
@@ -37,5 +49,5 @@ export class HomePage {
   changepass(){
     this.navCtrl.push('ResetPage');
   }
-
+  
 }
