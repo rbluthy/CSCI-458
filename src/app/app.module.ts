@@ -12,7 +12,7 @@ import { TeamsPage } from '../pages/teams/teams';
 import { LoginPage} from '../pages/login/login';
 import { RegisterPage} from '../pages/register/register';
 import { ResetPage} from '../pages/reset/reset';
-import {MapsPage} from '../pages/maps/maps';
+
 import {W1Page} from '../pages/w1/w1';
 import {W2Page} from '../pages/w2/w2';
 import {W3Page} from '../pages/w3/w3';
@@ -43,7 +43,6 @@ import { AngularFireAuthModule} from 'angularfire2/auth';
 import { RegisterPageModule } from '../pages/register/register.module';
 import { ResetPageModule } from '../pages/reset/reset.module';
 import { ChnagepasswordPage } from '../pages/chnagepassword/chnagepassword';
-
 
 const firebaseAuth = {
   apiKey: "AIzaSyBqACTMvP1pJ2iSS_mj4Zmz_omq2jLNRA0",
@@ -80,8 +79,7 @@ const firebaseAuth = {
     W14Page,
     W15Page,
     BowlsPage,
-    ChnagepasswordPage,
-    MapsPage
+    ChnagepasswordPage
   
 
   ],
@@ -124,8 +122,7 @@ const firebaseAuth = {
     W14Page,
     W15Page,
     BowlsPage,
-    ChnagepasswordPage,
-    MapsPage
+    ChnagepasswordPage
 
   ],
   providers: [
